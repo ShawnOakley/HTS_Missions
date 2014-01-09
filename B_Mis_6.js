@@ -5,6 +5,9 @@
 // # 3) Converts back to text
 // # 4) Returns text
 
+// Step 2 relies on the fact that the encrypting algorithm is the inverse:
+//  That is, +0 for first char., +1 for second char., +2 for third char.
+
 function decrypt(encryptedWord) {
 	var wordLength  = encryptedWord.length;
 	var counter = 0;
@@ -17,5 +20,5 @@ function decrypt(encryptedWord) {
 		counter += 1;
 	}
 
-	return decrypt_array.join()
+	return decrypt_array.join('')
 }
